@@ -56,7 +56,7 @@ class SudokuGrid:
         return True
 
     def find_all_solutions(self, grid, solutions, limit=2):
-        # Find all solutions up to a limit (used to ensure unique puzzle)
+        # Find all solutions up to a limit (makes sure the puzzle is unique)
         for i in range(9):
             for j in range(9):
                 if grid[i][j] == 0:
